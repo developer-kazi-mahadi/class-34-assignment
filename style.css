@@ -1,0 +1,129 @@
+.no-file {
+	width: 33px;
+	height: 2px;
+	background-color: blue;
+	margin: 10px 0;
+}
+.card-iner {
+	background: #f6f9fc;
+	width: 234px;
+	height: auto;
+	padding: 20px 10px;
+	border-radius: 10px;
+    transition: .3s;
+    position: relative;
+  
+}
+
+.card-iner:hover{
+    background: #0078d7;
+    color: #fff;
+}
+.card-iner:hover p{
+    color: #fff;
+}
+.card-iner:hover .card-icon i{
+    background: #fff;
+    color: #0078d7;
+}
+.card-iner h4 {
+	font-weight: 600;
+	font-size: 17px;
+	margin-bottom: 19px;
+}
+.card-iner p{
+    color: #a5a0b1;
+}
+.card-icon i {
+	background: #0078d7;
+    color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px 20px 20px 1px;
+	margin-bottom: 20px;
+}
+
+/* baner setion */
+.baner-sectin{
+	color: #fff;
+}
+
+.baner-div {
+	width: 33px;
+	height: 2px;
+	background-color: blue;
+	text-align: center;
+	position: relative;
+	left: 554px;
+	margin: 20px 0;
+	
+}
+
+.playbatton {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 50%;
+	font-size: 50px;
+	text-align: center;
+	line-height: 90px;
+	color: #3763eb;
+	position: relative;
+	
+	
+}
+.playbatton::before{
+	content: '';
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: seagreen;
+	border-radius: 50%;
+	animation: play 1s ease-out infinite;
+
+}
+@keyframes play{
+	0%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(1.5);
+		opacity: .7;
+	}
+	100%{
+		transform: scale(2);
+		opacity: 0;
+	}
+
+}
+
+
+
+
+
+.baner-sectin{
+	background: url(./img/video-bg.jpg) no-repeat  center;
+	background-size: cover;
+	padding: 200px;
+	position: relative;
+	z-index: 1;
+}
+.baner-sectin::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    
+    transition: .5s;
+    border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: -1;
+}
